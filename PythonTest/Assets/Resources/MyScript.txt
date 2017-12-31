@@ -1,7 +1,0 @@
-import UnityEngine as ue
-
-def printme(what):
-	ue.Debug.Log(what)
-	
-def deleteme(gameObject):
-	ue.Object.Destroy(gameObject)
