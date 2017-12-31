@@ -1,10 +1,7 @@
-import UnityEngine as ue
-import abc
+def updateCamera(camera):
+	v = camera.GetPos()
+	v2 = Vector3(v.x, v.y+1, v.z+1)
+	camera.SetPos(v2)
 
-def printme(what):
-	ue.Debug.Log(what)
-	
-def deleteme(gameObject):
-	ue.Debug.Log(abc)
-	ue.Object.Destroy(gameObject)
-	
+camera = tycoon.GetCamera()
+camera.SetUpdateFunction(updateCamera)
